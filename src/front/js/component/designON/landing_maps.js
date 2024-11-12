@@ -34,6 +34,7 @@ export const Landing_Maps = () => {
 
 
     const mapRef = React.useRef();
+    const apiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
 
     useEffect(() => {
         actions.loadInscripciones()
@@ -169,7 +170,7 @@ export const Landing_Maps = () => {
                         {/* End Nav */}
                     </div>
 
-                    <LoadScript googleMapsApiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY} libraries={libraries}>
+                    <LoadScript googleMapsApiKey={apiKey} libraries={libraries}>
 
                         <GoogleMap
 

@@ -27,6 +27,7 @@ export const EventosMapa = () => {
     };
 
     const mapRef = React.useRef();
+    const apiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY
 
     useEffect(() => {
         actions.loadInscripciones()
@@ -138,7 +139,7 @@ export const EventosMapa = () => {
                             Ver en Lista  <i className="fa-solid fa-rectangle-list" style={{ color: '#7c488f' }}></i>
                         </button>
                     </div>
-                    <LoadScript googleMapsApiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY} libraries={libraries}>
+                    <LoadScript googleMapsApiKey={apiKey} libraries={libraries}>
 
                         <GoogleMap
                             ref={mapRef}

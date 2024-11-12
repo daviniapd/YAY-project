@@ -12,6 +12,7 @@ export const Mapa = ({ setDireccion, initialDireccion, latitud, longitud }) => {
     const [isMapLoaded, setIsMapLoaded] = useState(false);
 
     const mapRef = React.useRef();
+    const apiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
 
     useEffect(() => {
         if (isMapLoaded && window.google) {
@@ -97,7 +98,7 @@ export const Mapa = ({ setDireccion, initialDireccion, latitud, longitud }) => {
 
     return (
         <LoadScript
-            googleMapsApiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY}
+            googleMapsApiKey={apiKey}
             libraries={libraries}
             onLoad={() => setIsMapLoaded(true)} // Esto se ejecuta cuando se carga el script de Google Maps
         >
