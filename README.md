@@ -14,7 +14,7 @@ YAY busca un cambio en la vida de las personas mayores de 60 que facilite la cre
 Con un enfoque no romántico y un diseño accesible, queremos ayudar a combatir la soledad y mejorar la calidad de vida de este sector de la sociedad. Además, ¿qué mejor momento para romper el hielo que haciendo algo que te gusta?
 
 
-<img align="left" src="https://i.ibb.co/VVdhpnr/Captura-de-Pantalla-2024-10-29-a-las-14-08-45.png" alt="landing" width="31%" style="vertical-align:middle"/><img align="center" alt="landing2" src="https://i.ibb.co/64jQT6j/Captura-de-Pantalla-2024-10-29-a-las-14-08-57.png" width="31%" style="vertical-align:middle"/><img align="right" alt="landing3" src="https://i.ibb.co/VJxmdH0/Captura-de-Pantalla-2024-10-29-a-las-14-09-29.png" width="31%" style="vertical-align:middle"/>
+<img align="left" src="https://i.ibb.co/86d6yHq/Captura-de-Pantalla-2024-10-29-a-las-14-08-45.png" alt="landing" width="31%" style="vertical-align:middle"/><img align="center" alt="landing2" src="https://i.ibb.co/64jQT6j/Captura-de-Pantalla-2024-10-29-a-las-14-08-57.png" width="31%" style="vertical-align:middle"/><img align="right" alt="landing3" src="https://i.ibb.co/VJxmdH0/Captura-de-Pantalla-2024-10-29-a-las-14-09-29.png" width="31%" style="vertical-align:middle"/>
 
 ## Tech
 #### Backend
