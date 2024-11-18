@@ -94,10 +94,11 @@ if __name__ == '__main__':
 
 # Configuración de Cloudinary
 cloudinary.config(
-  cloud_name = 'dy3hdvics',
-  api_key = '652126365153659',
-  api_secret = 'OSiPkpIQ53iN8pF1uoI2qbJyLiM'
+    cloud_name=os.getenv('CLOUDINARY_CLOUD_NAME'),
+    api_key=os.getenv('CLOUDINARY_API_KEY'),
+    api_secret=os.getenv('CLOUDINARY_API_SECRET'),
 )
+
 
 # from models import Person
 
