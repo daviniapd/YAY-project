@@ -37,7 +37,7 @@ export const Landing_Maps = () => {
     const apiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
 
     useEffect(() => {
-        actions.loadInscripciones()
+        actions.loadInscripciones();
         actions.loadEventosConUsuarios().then(() => {
             const eventoId = parseInt(params.theid);
             actions.getInteresPorEvento(eventoId).then((data) => {
@@ -50,19 +50,24 @@ export const Landing_Maps = () => {
         }).catch(error => {
             console.error("Error al cargar eventos:", error);
         });
+    
         const handleScroll = () => {
-            const cardTop = document.querySelector('.landing-card').getBoundingClientRect().top;
-            const scrollPosition = window.scrollY + window.innerHeight;
-            if (scrollPosition > cardTop) {
-                setIsVisible(true);
+            const card = document.querySelector('.landing-card');
+            if (card) { // Verificamos que el elemento no sea null
+                const cardTop = card.getBoundingClientRect().top;
+                const scrollPosition = window.scrollY + window.innerHeight;
+                if (scrollPosition > cardTop) {
+                    setIsVisible(true);
+                }
             }
         };
+    
         window.addEventListener('scroll', handleScroll);
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []);
-
+    }, [actions, params.theid]); // Asegúrate de incluir 'actions' y 'params.theid' como dependencias
+    
 
     const handleMarkerClick = (evento) => {
         setSelectedEvent(evento);
