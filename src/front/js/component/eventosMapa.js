@@ -264,7 +264,7 @@ export const EventosMapa = () => {
                 ) : (
                     <div className='d-flex flex-column align-items-center justify-content-center text-center w-100 ms-5'>
                         <h3 className='mx-5 mt-5 mb-3' style={{ color: '#7c488f' }}>Selecciona un evento en el mapa para ver más información</h3>
-                        <img src='https://i.ibb.co/6BTLRVj/mapa-click.png' style={{ maxHeight: '200px', marginLeft: '60px' }} />
+                        <img src="https://i.ibb.co/vCZYVq3B/mapa-click.png" style={{ maxHeight: '200px', marginLeft: '60px' }} />
                     </div>
                 )}
             </div>

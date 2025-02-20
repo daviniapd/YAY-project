@@ -258,7 +258,7 @@ export const Landing_Maps = () => {
                         <div className='d-flex flex-column align-items-center justify-content-center text-center w-100 mx-5 mt-5'>
                             <h3 style={{ color: '#7c488f', fontWeight: '300' }}>Selecciona un evento en el mapa para ver más información</h3>
                             <img
-                                src='https://i.ibb.co/6BTLRVj/mapa-click.png'
+                                src="https://i.ibb.co/vCZYVq3B/mapa-click.png"
                                 style={{ maxHeight: '150px', width: 'auto', display: 'block', marginLeft: '50px' }}
                             />
                         </div>
